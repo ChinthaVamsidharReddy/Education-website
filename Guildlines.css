@@ -1,0 +1,29 @@
+body{
+    margin:0%
+}
+p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #8AAAE5;
+}
+h2{
+    color: rgb(49, 88, 230);
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+h4{
+    font-size: 25px;
+    color: #8AAAE5;
+    font-family: 'Times New Roman', Times, serif;
+}
+h6{
+    font-size: 25px;
+    color: #8AAAE5;
+    margin-top: 15px;
+}
+#para{
+    color: #8AAAE5;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign-up.css">
+    <title>sign-up</title>
+</head>
+<body>
+    <div class="container">
+        <form id="sign-up" action="sign-in">
+            <input type="text" placeholder="Enter your name" id="name" required>
+            <input type="username"placeholder="E-mail" id="mail" required>
+            <input type="password"placeholder="password" id="password" required>
+            <input type="password"placeholder="Re-Enter your password" id="cnfpassword" required>
+            <button type="submit" id="submit" onclick="signup(event)">Sigup</button>
+            <p id="error-message"></p>
+            <label><p>Already have an account <a href="sign-in.html">Sign-in</a></p></label>
+        </form>
+    </div>
+    <script src="checking.js"></script>
+</body>
+</html>
