@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>sign-up</title>
+</head>
+<body>
+    <div class="container">
+        <form   onsubmit="return passwordcheck();">
+            <input type="text" placeholder="Enter your name" id="name" name="name" oninput="passwordcheck()" required>
+            <p id="error1"></p>
+            <input type="text" placeholder="E-mail" id="mail" name="email" oninput="passwordcheck()" required>
+            <p id="error2"></p>
+            <input type="password" placeholder="password" id="password" oninput="passwordcheck()" name="password"  required>
+            <p id="error3"></p>
+            <input type="password" placeholder="Re-Enter your password" name="repassword" id="cnfpassword" oninput="passwordcheck()" required>
+            <p id="error4"></p>
+            <input type="submit" id="submit" onclick="signup(event)" value="submit">
+            <label><p>Already have an account <a href="index.html">Sign-in</a></p></label>
+        </form>
+    </div>
+    <script src="checking.js"></script>
+    <script src="Passwordcheck.js"></script>
+</body>
+</html>

@@ -1,0 +1,668 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    background-color: #00246B;
+    margin: 0;
+    padding: 0;
+}
+.navdiv {
+    background: #CADCFC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 20px;
+    position: relative;
+}
+#logo {
+    font-size: 24px;
+    color: #00246B;
+    font-weight: bold;
+}
+#bars {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+#bars li {
+    list-style: none;
+}
+#bars li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#bars li a:hover {
+    background-color: #00246B;
+    color: #CADCFC;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #00246B;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    #bars {
+        display: none;
+        flex-direction: column;
+        background: #CADCFC;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    #bars.show {
+        display: flex; /* Show menu when toggled */
+    }
+
+    #bars li {
+        padding: 15px 0;
+    }
+
+    #bars li a {
+        font-size: 18px;
+    }
+}
+
+select{
+    background: #CADCFC;
+    font-size:15px;
+    font-weight: bolder;
+    border: none;
+}
+option{
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Times New Roman';
+}
+.passing{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    color: white;
+    font-size: 15px;
+}
+.passing p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 25s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0); 
+    }
+}
+#search-container{
+    display: flex;
+    justify-content:center;
+    margin-top: 10px;
+}
+#search{
+    width: 350px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.row1, .row1-2, .row1-3, .row2, .row2-1, .row2-2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+#React a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#React{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3yifJIPeCcgCF3MMVBYNVhVOrxz89XbwcFw&s");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#React:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+
+#Angular a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#Angular{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc-kUrCDbg-vSxRQN14lDnXPI3cbCEo9RkTA&s");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#Angular:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#java a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#java{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220224234349/Java-Developer-Learning-Path-A-Complete-Roadmap.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#java:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#python a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#python{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://codewithcurious.com/wp-content/uploads/2023/09/Complete-Python-RoadMap.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#python:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#javascript a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#javascript{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaj5-goSEIRx8sEeb8luYhkGKLi4tAMAOcunRurYqtBF5DXSEljfJCHboShduX8fNYVQc&usqp=CAU");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#javascript:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#sql a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#sql{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszUytTnYmOBvkQxrUGGAncVdh5QiVHVux8w&s");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#sql:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#cpluse a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#cpluse{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU5_y0NRDV63vP9F-UU1YGsK4e4Vvu84E-3Q&s");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#cpluse:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#flutter a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(28, 214, 174);
+    text-decoration: none;
+}
+#flutter{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://miro.medium.com/v2/resize:fit:1200/1*jxEnl5v3eLGvM-y6b39Eiw.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#flutter:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#Node a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#Node{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfrIBklUar0Q4UEISfcC8d5WhQ7zaFNkHRUg&s");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#Node:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#javapdf a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#javapdf {
+    height: 200px;
+    width: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWtYohdDTG_yWoaiW7DPcLXlR40tJQEEkI_A&s");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#javapdf:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#pythonpdf a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#pythonpdf{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKfgFJEFz435UlZln3MSQP99R7kRXl9khY-g&s");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#pythonpdf:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#nodepdf a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#nodepdf{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP30yCzP4kVnNvQZKncl8APYUzSVIcwtgL7Q&s");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#nodepdf:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#sqlpdf a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#sqlpdf{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://www.techaltum.com/img/sql.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#sqlpdf:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#reactpdf a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#reactpdf{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToxjpNRTS8lgTN2AFMdpsBwvF5zguP2PJL-g&s");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#reactpdf:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#javascriptpdf a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#javascriptpdf{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhzJD1CM1VvBmXdQwKaLyhbytp8DYjo8nUOw&s");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#javascriptpdf:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#datastructureonepdf a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#datastructureonepdf{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://i.ytimg.com/vi/Qmt0QwzEmh0/maxresdefault.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#datastructureonepdf:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#datastructuretwopdf a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#datastructuretwopdf{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://i.ytimg.com/vi/Qmt0QwzEmh0/maxresdefault.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#datastructuretwopdf:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+#cplusepdf a {
+    font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: rgb(25, 10, 10);
+    text-decoration: none;
+}
+#cplusepdf{
+    height: 200px;
+    width: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60jwru2L1khN6GEYajlS1NZqXyExvaoXxsQ&s");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: 1;
+}
+#cplusepdf:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+h2 {
+    text-align: center;
+    color: #faf8f8;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+}
+
+li {
+    margin: 10px;
+    padding-left: 0;
+}
+
+li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: #0f365f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+    text-align: center;
+}
+
+li a:hover {
+    background-color: #7A2048;
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li a {
+        font-size: 16px; 
+        width: 90%;
+    }
+}
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    li a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+#roadmap,#lecturer,#practice{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    background-color: #CADCFC;
+    color: #00246B;
+    text-transform: uppercase;
+    border-radius: 25px;
+    padding: 10px;
+}
+ .copyright{
+    position: absolute;
+    background: rgb(240, 235, 235);
+    height: auto;
+	width: 100%;
+    padding: 40px 0 0 0;
+}
+.copyright {
+    background: rgb(240, 235, 235);
+    text-align: center;
+    color: black;
+}
+
+.footer p {
+    margin: 10px auto;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    background-color: #CADCFC;
+    color: black;
+    font-size: 1.2em;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.socials a:hover {
+    background-color: #7A2048;
+    color: white;
+} 
+#last{
+    text-decoration: none;
+}
